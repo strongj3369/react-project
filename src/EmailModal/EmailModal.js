@@ -10,10 +10,10 @@ const EmailModal = () => {
         document.body.addEventListener('mouseleave', () => {
             if (Cookies.get('modalOpenBefore') !== 'true') {
                 newState.openModalAction()
-
+            
             }
-        });
-    }, []);
+        })
+    }, [])
 
     // console.log(newState)
     return (
