@@ -49,20 +49,22 @@ export function EMProvider({ children }) {
 
     return (
         <StateContext.Provider 
-        value={{ 
-            modalOpen, 
-            email, 
-            handleEmailInput, 
-            openModalAction, 
-            closeModalAction,
-            checkForEmail,
-            showEmailError,
-            removeErrorMessage,
-            submittedForm,
-            formCompleted
+            value={{ 
+                modalOpen, 
+                email, 
+                handleEmailInput, 
+                openModalAction, 
+                closeModalAction,
+                checkForEmail,
+                showEmailError,
+                removeErrorMessage,
+                submittedForm,
+                formCompleted
             }}>
             {children}
         </StateContext.Provider>
     )
 }
+
+
 
